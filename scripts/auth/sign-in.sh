@@ -1,7 +1,12 @@
+#sh scripts/auth/sign-in.sh
+
 #!/bin/bash
 
 API="http://localhost:4741"
-URL_PATH="/sign-up"
+URL_PATH="/sign-in"
+# AZ: Added EMAIL and PASSWORD in order to speed up the curl script testing process.
+EMAIL="tests"
+PASSWORD="test"
 
 curl "${API}${URL_PATH}" \
   --include \
@@ -10,8 +15,7 @@ curl "${API}${URL_PATH}" \
   --data '{
     "credentials": {
       "email": "'"${EMAIL}"'",
-      "password": "'"${PASSWORD}"'",
-      "password_confirmation": "'"${PASSWORD}"'"
+      "password": "'"${PASSWORD}"'"
     }
   }'
 
