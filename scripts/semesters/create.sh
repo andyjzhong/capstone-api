@@ -5,6 +5,7 @@
 API="http://localhost:4741"
 URL_PATH="/semesters"
 SEMESTERNAME="May 28"
+TEST=111
 TOKEN="XvP0cTbCHrKynNTT6m24r9YDxRIXrLqRcLiaRQjhHRY=--WgD2S7NGaANsQ3VbdHB2b+5KpL62uy36sw1kXwome24="
 curl "${API}${URL_PATH}" \
   --include \
@@ -13,7 +14,8 @@ curl "${API}${URL_PATH}" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "semester": {
-      "semesterName": "'"${SEMESTERNAME}"'"
+      "semesterName": "'"${SEMESTERNAME}"'",
+      "testAttribute": "'"${TEST}"'"
     }
   }'
 

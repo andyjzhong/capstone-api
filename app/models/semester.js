@@ -7,6 +7,10 @@ const semesterSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  testAttribute: {
+    type: Number,
+    required: true
+  },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
