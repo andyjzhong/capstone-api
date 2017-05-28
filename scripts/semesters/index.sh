@@ -1,10 +1,10 @@
-#sh scripts/pages/getAll.sh
+#sh scripts/semesters/index.sh
 
 #!/bin/sh
 
 API="http://localhost:4741"
-URL_PATH="/pages"
-TOKEN='fErW0oZN/BgHewBB80bteeJ8+/xDpYlYGn6Rn5D8U/o=--wfLZe2TO9m7/wfsBhrnQNuykaG8KSQgarpDycp+XvWI='
+URL_PATH="/semesters"
+TOKEN='XvP0cTbCHrKynNTT6m24r9YDxRIXrLqRcLiaRQjhHRY=--WgD2S7NGaANsQ3VbdHB2b+5KpL62uy36sw1kXwome24='
 
 # How should we handle this functionality? Allow all people to view?
 # Replace this TOKEN with a valid one.

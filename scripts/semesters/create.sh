@@ -4,8 +4,8 @@
 
 API="http://localhost:4741"
 URL_PATH="/semesters"
-SEMESTERNAME="Fall 2017"
-TOKEN="tstqty8m7VQYzhZydGT5deymxvlgEgqzv94fZXBEdGI=--ysL/lJpfjJrrCMI/hjUrJUmn3LBWzTGr2A8A5qbKsOg="
+SEMESTERNAME="May 28"
+TOKEN="XvP0cTbCHrKynNTT6m24r9YDxRIXrLqRcLiaRQjhHRY=--WgD2S7NGaANsQ3VbdHB2b+5KpL62uy36sw1kXwome24="
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
