@@ -1,23 +1,19 @@
-'use strict'
+'use strict';
 
-const mongoose = require('mongoose')
+const mongoose = require('mongoose');
 
 const semesterSchema = new mongoose.Schema({
   semesterName: {
     type: String,
-    required: true
+    required: true,
   },
-  testAttribute: {
-    type: Number,
-    required: true
-  },
-  owner: {
+  _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
-    required: true
-  }
-})
+    required: true,
+  },
+});
 
-const Semester = mongoose.model('Semester', semesterSchema)
+const Semester = mongoose.model('Semester', semesterSchema);
 
-module.exports = Semester
+module.exports = Semester;
