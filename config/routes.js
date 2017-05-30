@@ -19,6 +19,8 @@ module.exports = require('lib/wiring/routes')
 
 // AZ: Added resource for semesters here.
 .resources('semesters')
+// AZ: Added resource for semesters here.
+.resources('courses')
 
 // all routes created
 ;
