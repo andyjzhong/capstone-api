@@ -5,8 +5,8 @@
 API="http://localhost:4741"
 URL_PATH="/courses"
 #ID of a Specific Page
-TOKEN="XvP0cTbCHrKynNTT6m24r9YDxRIXrLqRcLiaRQjhHRY=--WgD2S7NGaANsQ3VbdHB2b+5KpL62uy36sw1kXwome24="
-ID="592b4747991132439a1f3e7c"
+TOKEN="XPUp509e89kiUDnIPlPqhUvzxP4caFABKMKQ0IUXYXU=--7/7hH5/aeAYveevmMWXis314ZdmGL7slS2DJ7gvEJds="
+ID="592d80feb0348c0497d927c8"
 curl "${API}${URL_PATH}/${ID}" \
   --include \
   --request GET \

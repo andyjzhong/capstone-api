@@ -3,8 +3,16 @@
 const mongoose = require('mongoose');
 
 const courseSchema = new mongoose.Schema({
-  text: {
+  courseName: {
     type: String,
+    required: true,
+  },
+  grade: {
+    type: String,
+    required: true,
+  },
+  credits: {
+    type: Number,
     required: true,
   },
   _owner: {
@@ -12,20 +20,6 @@ const courseSchema = new mongoose.Schema({
     ref: 'User',
     required: true,
   },
-}, {
-  timestamps: true,
-  toJSON: {
-    virtuals: true,
-    transform: function (doc, ret, options) {
-      let userId = (options.user && options.user._id) || false;
-      ret.editable = userId && userId.equals(doc._owner);
-      return ret;
-    },
-  },
-});
-
-courseSchema.virtual('length').get(function length() {
-  return this.text.length;
 });
 
 const Course = mongoose.model('Course', courseSchema);

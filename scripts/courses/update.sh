@@ -4,9 +4,9 @@
 
 API="http://localhost:4741"
 URL_PATH="/courses"
-SEMESTERNAME="Update Test"
-TOKEN="XvP0cTbCHrKynNTT6m24r9YDxRIXrLqRcLiaRQjhHRY=--WgD2S7NGaANsQ3VbdHB2b+5KpL62uy36sw1kXwome24="
-ID="592b3be0991132439a1f3e76"
+NAME="Updated Course!"
+TOKEN="XPUp509e89kiUDnIPlPqhUvzxP4caFABKMKQ0IUXYXU=--7/7hH5/aeAYveevmMWXis314ZdmGL7slS2DJ7gvEJds="
+ID="592d8098b0348c0497d927c7"
 curl "${API}${URL_PATH}/${ID}" \
   --include \
   --request PATCH \
@@ -14,7 +14,7 @@ curl "${API}${URL_PATH}/${ID}" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "course": {
-      "courseName": "'"${SEMESTERNAME}"'"
+      "courseName": "'"${NAME}"'"
     }
   }'
 
