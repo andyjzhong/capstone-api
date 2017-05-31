@@ -15,6 +15,10 @@ const courseSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
+  semester: {
+    type: String,
+    required: true,
+  },
   _owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User',
