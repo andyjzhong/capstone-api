@@ -4,7 +4,7 @@
 
 API="http://localhost:4741"
 URL_PATH="/courses"
-TOKEN="XPUp509e89kiUDnIPlPqhUvzxP4caFABKMKQ0IUXYXU=--7/7hH5/aeAYveevmMWXis314ZdmGL7slS2DJ7gvEJds="
+TOKEN="essVYaDZNtLgxvV4Dk2GYsWaCpCA9HJD8hJv6NtMAG0=--HC6fye0ZsLFwDjLdiK7KWh0p23E1/ec4+aMkQHPAWYA="
 
 # How should we handle this functionality? Allow all people to view?
 # Replace this TOKEN with a valid one.

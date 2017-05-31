@@ -4,10 +4,11 @@
 
 API="http://localhost:4741"
 URL_PATH="/courses"
-NAME="New Course 2"
+NAME="New Course Revised 3"
 GRADE="A"
 CREDITS=3
-TOKEN="XPUp509e89kiUDnIPlPqhUvzxP4caFABKMKQ0IUXYXU=--7/7hH5/aeAYveevmMWXis314ZdmGL7slS2DJ7gvEJds="
+SEMESTER="Fall 2017"
+TOKEN="essVYaDZNtLgxvV4Dk2GYsWaCpCA9HJD8hJv6NtMAG0=--HC6fye0ZsLFwDjLdiK7KWh0p23E1/ec4+aMkQHPAWYA="
 curl "${API}${URL_PATH}" \
   --include \
   --request POST \
@@ -17,7 +18,8 @@ curl "${API}${URL_PATH}" \
     "course": {
       "courseName": "'"${NAME}"'",
       "grade": "'"${GRADE}"'",
-      "credits": "'"${CREDITS}"'"
+      "credits": "'"${CREDITS}"'",
+      "semester": "'"${SEMESTER}"'"
     }
   }'
 
