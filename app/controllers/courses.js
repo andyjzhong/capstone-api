@@ -9,7 +9,7 @@ const setUser = require('./concerns/set-current-user');
 const setModel = require('./concerns/set-mongoose-model');
 
 const index = (req, res, next) => {
-  Course.find()
+  Course.find({_owner: req.user.id})
     .then(courses => res.json({
       courses: courses.map((e) =>
         e.toJSON({ virtuals: true, user: req.user })),
